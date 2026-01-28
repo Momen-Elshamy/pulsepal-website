@@ -1,0 +1,20 @@
+2026-01-28 22:19:14 info: Congratulations, your extension "Embold" is now active!
+2026-01-28 22:19:14 info: ************* init ****************
+2026-01-28 22:19:14 info: tempDirectory : /Users/momenelshamy/.cursor/extensions/embold-vscode.embold-0.3.0/temp
+2026-01-28 22:19:15 info: Extraction complete for source: /Users/momenelshamy/.cursor/extensions/embold-vscode.embold-0.3.0/resources/embold-scanner-archive.zip, destination: /Users/momenelshamy/.cursor/extensions/embold-vscode.embold-0.3.0/temp
+2026-01-28 22:19:15 info: Extension installed on machine OS : darwin
+2026-01-28 22:19:15 info: Fetched the issues from DB
+2026-01-28 22:19:16 info: Embold extension version response:{"hasSupport":false,"version":"0.2.1","changeNotes":"<div> <p>Release Date: 30 Apr, 2025 <br><span>Bug fixes and improvements.</span></p> </div>"}
+2026-01-28 22:19:16 info: Current installed embold extension version : 0.3.0
+2026-01-28 22:19:16 info: Latest embold extension version on marketplace : 0.2.1
+2026-01-28 22:19:16 info: Current extension version: 0.3.0
+2026-01-28 22:19:16 info: Stored extension version: 0.3.0
+2026-01-28 22:19:16 info: No new installation or upgrade detected. Skipping plugin activation tracking.
+2026-01-28 22:19:16 info: Java version installed on machine : 
+openjdk version "19.0.1" 2022-10-18
+OpenJDK Runtime Environment Temurin-19.0.1+10 (build 19.0.1+10)
+OpenJDK 64-Bit Server VM Temurin-19.0.1+10 (build 19.0.1+10, mixed mode)
+
+2026-01-28 22:19:16 info: Java installed on machine.
+2026-01-28 22:21:45 info: Row(s) deleted
+2026-01-28 22:23:44 info: Row(s) deleted

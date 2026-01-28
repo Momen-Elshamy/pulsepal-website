@@ -1,0 +1,107 @@
+.section {
+    padding: 80px 24px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+.stat {
+    text-align: center;
+    padding: 32px 16px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.stat::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(
+        135deg,
+        rgba(139, 92, 246, 0) 0%,
+        rgba(139, 92, 246, 0.5) 50%,
+        rgba(96, 165, 250, 0) 100%
+    );
+    background-size: 200% 200%;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.stat:hover::before {
+    opacity: 1;
+    animation: borderRotate 3s linear infinite;
+}
+
+@keyframes borderRotate {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 200%; }
+}
+
+.stat:hover {
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 10px 40px -10px rgba(139, 92, 246, 0.2);
+}
+
+.value {
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(
+        90deg, 
+        #a78bfa 0%, 
+        #60a5fa 25%, 
+        #a78bfa 50%, 
+        #60a5fa 75%, 
+        #a78bfa 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+    animation: valueShimmer 4s linear infinite;
+}
+
+@keyframes valueShimmer {
+    0% { background-position: 0% center; }
+    100% { background-position: 200% center; }
+}
+
+.label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .value {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

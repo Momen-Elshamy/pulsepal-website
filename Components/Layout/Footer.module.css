@@ -1,0 +1,88 @@
+.footer {
+    padding: 80px 24px 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    margin-bottom: 64px;
+}
+
+.brand {
+    max-width: 280px;
+}
+
+.brand img {
+    margin-bottom: 16px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+
+.links {
+    display: flex;
+    gap: 64px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.column h4 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.column a {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.2s;
+}
+
+.column a:hover {
+    color: #fff;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.bottom p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        gap: 48px;
+    }
+    
+    .links {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    
+    .bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
