@@ -23,7 +23,7 @@ const plans = [
         price: "€29",
         period: "/month",
         features: [
-            "Unlimited artist profiles",
+            "Up to 5 artist profiles",
             "Unlimited offer analyses",
             "Full AI reports & recommendations",
             "Flight & hotel suggestions",
