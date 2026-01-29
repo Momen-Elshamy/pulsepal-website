@@ -1,5 +1,5 @@
 import styles from './Pricing.module.css';
-import { CheckOutlined } from '@ant-design/icons';
+import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 
 const plans = [
@@ -9,10 +9,11 @@ const plans = [
         price: "Free",
         period: "",
         features: [
-            "1 artist profile",
-            "5 offer analyses / month",
-            "Basic financial breakdown",
-            "Email support"
+            { text: "1 artist profile", included: true },
+            { text: "AI offer analysis", included: true },
+            { text: "Flight & hotel suggestions", included: true },
+            { text: "Email inbox for offers", included: false },
+            { text: "Custom AI instructions", included: false },
         ],
         cta: "Get Started",
         popular: false
@@ -23,11 +24,11 @@ const plans = [
         price: "€29",
         period: "/month",
         features: [
-            "Up to 5 artist profiles",
-            "Unlimited offer analyses",
-            "Full AI reports & recommendations",
-            "Flight & hotel suggestions",
-            "Priority support"
+            { text: "Up to 5 artist profiles", included: true },
+            { text: "AI offer analysis", included: true },
+            { text: "Flight & hotel suggestions", included: true },
+            { text: "Email inbox for offers", included: true },
+            { text: "Custom AI instructions", included: true },
         ],
         cta: "Start Free Trial",
         popular: true
@@ -38,11 +39,11 @@ const plans = [
         price: "€99",
         period: "/month",
         features: [
-            "Everything in Pro",
-            "Team collaboration",
-            "Multi-artist dashboard",
-            "API access",
-            "Dedicated account manager"
+            { text: "Unlimited artist profiles", included: true },
+            { text: "Everything in Pro", included: true },
+            { text: "Priority support", included: true },
+            { text: "Team collaboration", included: true, soon: true },
+            { text: "API access", included: true, soon: true },
         ],
         cta: "Contact Sales",
         popular: false
@@ -170,14 +171,20 @@ export default function Pricing() {
                                 {plan.features.map((feature, fIndex) => (
                                     <motion.li 
                                         key={fIndex}
+                                        className={!feature.included ? styles.featureExcluded : ''}
                                         variants={featureVariants}
                                         initial="hidden"
                                         whileInView="visible"
                                         viewport={{ once: true }}
                                         transition={{ delay: 0.4 + fIndex * 0.05 }}
                                     >
-                                        <CheckOutlined className={styles.checkIcon} />
-                                        {feature}
+                                        {feature.included ? (
+                                            <CheckOutlined className={styles.checkIcon} />
+                                        ) : (
+                                            <CloseOutlined className={styles.closeIcon} />
+                                        )}
+                                        {feature.text}
+                                        {feature.soon && <span className={styles.soonBadge}>Soon</span>}
                                     </motion.li>
                                 ))}
                             </ul>

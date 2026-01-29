@@ -138,6 +138,29 @@
     font-size: 14px;
 }
 
+.closeIcon {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+}
+
+.featureExcluded {
+    opacity: 0.5;
+}
+
+.soonBadge {
+    display: inline-block;
+    padding: 2px 8px;
+    background: rgba(251, 191, 36, 0.15);
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fbbf24;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 8px;
+}
+
 .ctaBtn {
     display: block;
     width: 100%;
