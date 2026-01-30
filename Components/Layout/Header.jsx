@@ -50,6 +50,19 @@ export default function Header() {
                         Log in
                     </Link>
                     <motion.div
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        <a
+                            href="https://calendly.com/management-santemusic/30min"
+                            target="_blank"
+                            rel="noreferrer"
+                            className={styles.demoBtn}
+                        >
+                            Book a Demo
+                        </a>
+                    </motion.div>
+                    <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                     >

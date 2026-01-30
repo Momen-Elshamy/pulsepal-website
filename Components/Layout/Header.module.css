@@ -61,6 +61,25 @@
     color: #fff;
 }
 
+
+.demoBtn {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.demoBtn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.22);
+    transform: translateY(-1px);
+}
+
 .ctaBtn {
     background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
     color: #fff;

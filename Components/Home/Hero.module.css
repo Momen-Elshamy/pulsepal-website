@@ -221,23 +221,6 @@
         0 0 0 1px rgba(139, 92, 246, 0.3);
 }
 
-.tertiaryBtn {
-    padding: 14px 28px;
-    background: rgba(139, 92, 246, 0.08);
-    border: 1px solid rgba(139, 92, 246, 0.35);
-    color: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 10px;
-    transition: all 0.2s;
-}
-
-.tertiaryBtn:hover {
-    background: rgba(139, 92, 246, 0.14);
-    border-color: rgba(139, 92, 246, 0.55);
-    transform: translateY(-2px);
-}
-
 .secondaryBtn {
     padding: 14px 28px;
     background: rgba(255, 255, 255, 0.05);
