@@ -1,0 +1,89 @@
+.page {
+  min-height: 80vh;
+  padding: 110px 24px 120px;
+  background: radial-gradient(ellipse at top, rgba(96, 165, 250, 0.12) 0%, transparent 55%);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  margin-bottom: 18px;
+}
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #fff;
+}
+
+.notice {
+  margin: 18px 0 24px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+}
+
+.article {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 34px;
+}
+
+.title {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.meta {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.content {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.content :global(h2) {
+  margin-top: 28px;
+  color: #fff;
+}
+
+.content :global(a) {
+  color: #a78bfa;
+}
+
+.content :global(pre) {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 14px;
+  border-radius: 12px;
+  overflow: auto;
+}
+
+.content :global(code) {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+  .article {
+    padding: 22px;
+  }
+}
