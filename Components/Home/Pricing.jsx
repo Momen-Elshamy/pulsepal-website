@@ -30,7 +30,7 @@ const plans = [
             { text: "Email inbox for offers", included: true },
             { text: "Custom AI instructions", included: true },
         ],
-        cta: "Start Free Trial",
+        cta: "Get Started",
         popular: true
     },
     {
@@ -121,7 +121,7 @@ export default function Pricing() {
                         <span className={styles.gradient}>with your career</span>
                     </h2>
                     <p className={styles.subtitle}>
-                        Start free, upgrade when you're ready. Cancel anytime.
+                        Get started, upgrade when you're ready. Cancel anytime.
                     </p>
                 </motion.div>
                 
