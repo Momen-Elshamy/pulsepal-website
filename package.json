@@ -12,6 +12,7 @@
     "antd": "^6.0.0",
     "framer-motion": "^12.29.2",
     "next": "16.0.5",
+    "posthog-js": "^1.336.4",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
