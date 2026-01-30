@@ -113,6 +113,16 @@ export default function Hero() {
                         <ArrowRightOutlined />
                     </motion.a>
                     <motion.a 
+                        href="https://calendly.com/management-santemusic/30min"
+                        target="_blank"
+                        rel="noreferrer"
+                        className={styles.tertiaryBtn}
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        Book a Demo
+                    </motion.a>
+                    <motion.a 
                         href="#features" 
                         className={styles.secondaryBtn}
                         whileHover={{ scale: 1.03 }}

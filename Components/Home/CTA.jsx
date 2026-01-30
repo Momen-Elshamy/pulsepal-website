@@ -56,19 +56,30 @@ export default function CTA() {
                     >
                         Join artists and agencies who are making better booking decisions with AI.
                     </motion.p>
-                    <motion.a 
-                        href="https://ai.pulsepal.de/" 
-                        className={styles.ctaBtn}
-                        variants={itemVariants}
-                        whileHover={{ 
-                            scale: 1.05,
-                            boxShadow: "0 15px 50px rgba(139, 92, 246, 0.5)"
-                        }}
-                        whileTap={{ scale: 0.98 }}
-                    >
-                        Get Early Access
-                        <ArrowRightOutlined />
-                    </motion.a>
+                    <motion.div className={styles.ctaButtons} variants={itemVariants}>
+                        <motion.a 
+                            href="https://ai.pulsepal.de/" 
+                            className={styles.ctaBtn}
+                            whileHover={{ 
+                                scale: 1.05,
+                                boxShadow: "0 15px 50px rgba(139, 92, 246, 0.5)"
+                            }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            Get Early Access
+                            <ArrowRightOutlined />
+                        </motion.a>
+                        <motion.a 
+                            href="https://calendly.com/management-santemusic/30min"
+                            target="_blank"
+                            rel="noreferrer"
+                            className={styles.secondaryBtn}
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            Book a Demo
+                        </motion.a>
+                    </motion.div>
                     <motion.p 
                         className={styles.note}
                         variants={itemVariants}
