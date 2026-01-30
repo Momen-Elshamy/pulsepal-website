@@ -237,6 +237,26 @@
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+.demoBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: rgba(52, 211, 153, 0.1);
+    border: 1px solid rgba(52, 211, 153, 0.3);
+    color: #34d399;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.demoBtn:hover {
+    background: rgba(52, 211, 153, 0.2);
+    border-color: rgba(52, 211, 153, 0.5);
+    color: #6ee7b7;
+}
+
 .socialProof {
     display: flex;
     align-items: center;
@@ -338,7 +358,8 @@
     }
     
     .primaryBtn,
-    .secondaryBtn {
+    .secondaryBtn,
+    .demoBtn {
         width: 100%;
         justify-content: center;
     }

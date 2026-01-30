@@ -1,6 +1,8 @@
 import styles from './Pricing.module.css';
-import { CheckOutlined, CloseOutlined } from '@ant-design/icons';
+import { CheckOutlined, CloseOutlined, CalendarOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
+
+const DEMO_URL = "https://calendly.com/management-santemusic/30min";
 
 const plans = [
     {
@@ -45,7 +47,8 @@ const plans = [
             { text: "Team collaboration", included: true, soon: true },
             { text: "API access", included: true, soon: true },
         ],
-        cta: "Contact Sales",
+        cta: "Book a Demo",
+        ctaUrl: DEMO_URL,
         popular: false
     }
 ];
@@ -189,7 +192,9 @@ export default function Pricing() {
                                 ))}
                             </ul>
                             <motion.a 
-                                href="https://ai.pulsepal.de/" 
+                                href={plan.ctaUrl || "https://ai.pulsepal.de/"} 
+                                target={plan.ctaUrl ? "_blank" : undefined}
+                                rel={plan.ctaUrl ? "noopener noreferrer" : undefined}
                                 className={`${styles.ctaBtn} ${plan.popular ? styles.ctaPrimary : ''}`}
                                 whileHover={{ scale: 1.03 }}
                                 whileTap={{ scale: 0.98 }}

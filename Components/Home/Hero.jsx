@@ -1,5 +1,5 @@
 import styles from './Hero.module.css';
-import { ArrowRightOutlined, ThunderboltFilled } from '@ant-design/icons';
+import { ArrowRightOutlined, ThunderboltFilled, CalendarOutlined } from '@ant-design/icons';
 import { motion } from 'framer-motion';
 
 const fadeInUp = {
@@ -119,6 +119,17 @@ export default function Hero() {
                         whileTap={{ scale: 0.98 }}
                     >
                         See How It Works
+                    </motion.a>
+                    <motion.a 
+                        href="https://calendly.com/management-santemusic/30min" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.demoBtn}
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.98 }}
+                    >
+                        <CalendarOutlined />
+                        Book a Demo
                     </motion.a>
                 </motion.div>
                 
